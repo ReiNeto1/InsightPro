@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Empresarial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#funcionarios">Funcionários</a></li>
+            <li><a href="#insumos">Insumos</a></li>
+            <li><a href="#ganhos">Ganhos</a></li>
+            <li><a href="#riscos">Análise de Risco</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="funcionarios">
+            <h2>Análise de Funcionários</h2>
+            <canvas id="funcionariosChart"></canvas>
+        </section>
+        <section id="insumos">
+            <h2>Análise de Insumos</h2>
+            <canvas id="insumosChart"></canvas>
+        </section>
+        <section id="ganhos">
+            <h2>Análise de Ganhos</h2>
+            <canvas id="ganhosChart"></canvas>
+        </section>
+        <section id="riscos">
+            <h2>Análise de Risco</h2>
+            <canvas id="riscosChart"></canvas>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
